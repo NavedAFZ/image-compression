@@ -33,7 +33,7 @@ plt.ylabel('WCSS')
 plt.show()"""
 
 # Fitting K-Means to the dataset
-kmeans = KMeans(n_clusters = 15, init = 'k-means++', random_state = 42)
+kmeans = KMeans(n_clusters = 15, init = 'k-means++')
 y_kmeans = kmeans.fit_predict(X)
 y1=kmeans.predict(X)      # k value index wise
 m1=kmeans.cluster_centers_     # k cluster centeroids
